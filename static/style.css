@@ -1,0 +1,14 @@
+:root {
+    --xmas-red: #c65c52;
+    --xmas-green: #516436;
+    --xmas-light-green: #7a9651;
+    --xmas-dark-green: #3c4a28;
+}
+body {
+    background: #333;
+    color: #eee;
+    margin: 0;
+}
+html,body {
+    height: 100%;
+}
