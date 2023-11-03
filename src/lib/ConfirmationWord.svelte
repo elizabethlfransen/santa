@@ -1,8 +1,10 @@
 <script>
-    import {CONFIRMATION_WORD} from "$lib/constants"
+    import {CONFIRMATION_WORD,CURRENT_YEAR} from "$lib/constants"
 </script>
 <span>
     {CONFIRMATION_WORD}
+    <br/>
+    {CURRENT_YEAR}
 </span>
 
 <style lang="scss">
@@ -14,5 +16,6 @@
     color: #aaa;
     font-size: 1.5rem;
     font-family: sans-serif;
+    text-align: right;
   }
 </style>
