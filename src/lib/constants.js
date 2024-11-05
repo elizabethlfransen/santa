@@ -2,7 +2,7 @@ import seedrandom from 'seedrandom';
 import {WORDS} from "./words.js";
 
 export const CURRENT_YEAR = new Date().getFullYear();
-export const NAMES = ['John', 'Michel', 'Eric', 'Liz', 'Scarlett'];
+export const NAMES = ['Michel', 'Eric', 'Liz', 'Scarlett'];
 export const MATCHES = createMatches(CURRENT_YEAR);
 export const CONFIRMATION_WORD = getConfirmationWord();
 
