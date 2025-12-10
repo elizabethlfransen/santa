@@ -3,7 +3,7 @@ import {WORDS} from "./words.js";
 
 const SALT = 1;
 export const CURRENT_YEAR = new Date().getFullYear();
-export const SEED = CURRENT_YEAR + salt;
+export const SEED = CURRENT_YEAR + SALT;
 export const NAMES = ['Michel', 'Eric', 'Liz', 'Scarlett'];
 export const MATCHES = createMatches(SEED);
 export const CONFIRMATION_WORD = getConfirmationWord();
