@@ -1,9 +1,11 @@
 import seedrandom from 'seedrandom';
 import {WORDS} from "./words.js";
 
+const SALT = 1;
 export const CURRENT_YEAR = new Date().getFullYear();
+export const SEED = CURRENT_YEAR + salt;
 export const NAMES = ['Michel', 'Eric', 'Liz', 'Scarlett'];
-export const MATCHES = createMatches(CURRENT_YEAR);
+export const MATCHES = createMatches(SEED);
 export const CONFIRMATION_WORD = getConfirmationWord();
 
 function isInvalidMatches(matches) {
@@ -20,7 +22,7 @@ function createMatches(seed) {
 }
 
 function getConfirmationWord() {
-    const random = seedrandom(CURRENT_YEAR);
+    const random = seedrandom(SEED);
     const index = Math.trunc(random() * WORDS.length);
     return WORDS[index];
 }
